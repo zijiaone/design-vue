@@ -16,8 +16,11 @@
     "lint:style": "stylelint site/**/*.{html,css,vue,less} --fix",
     "format": "prettier --write site/"
   },
+  "peerDependencies": {
+    "vue": ">=3.2.0"
+  },
   "dependencies": {
-    "vue": "^3.5.14"
+    "ant-design-vue": "^4.2.6"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.8.1",
@@ -45,6 +48,7 @@
     "stylelint-order": "^7.0.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
+    "vue": "^3.5.14",
     "vue-tsc": "^2.2.10"
   },
   "simple-git-hooks": {
