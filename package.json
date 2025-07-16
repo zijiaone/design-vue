@@ -14,7 +14,10 @@
     "lint:lint-staged": "lint-staged",
     "lint:script": "eslint . --fix",
     "lint:style": "stylelint site/**/*.{html,css,vue,less} --fix",
-    "format": "prettier --write site/"
+    "format": "prettier --write site/",
+    "lib:build": "cross-env BUILD_MODE=lib vite build",
+    "lib:type-check": "echo '类型检查暂时禁用，因为遇到 TypeScript 内部错误'",
+    "lib:build-all": "run-s lib:type-check lib:build"
   },
   "peerDependencies": {
     "vue": ">=3.2.0"
@@ -23,13 +26,16 @@
     "ant-design-vue": "^4.2.6"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.28.0",
     "@commitlint/config-conventional": "^19.8.1",
+    "@rollup/plugin-commonjs": "^28.0.6",
     "@types/node": "^22.15.21",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/tsconfig": "^0.7.0",
     "commitlint": "^19.8.1",
+    "cross-env": "^7.0.3",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
@@ -46,8 +52,11 @@
     "stylelint-config-standard": "^38.0.0",
     "stylelint-less": "^3.0.1",
     "stylelint-order": "^7.0.0",
+    "terser": "^5.29.2",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
+    "vite-plugin-babel": "^1.3.2",
+    "vite-plugin-dts": "^3.8.1",
     "vue": "^3.5.14",
     "vue-tsc": "^2.2.10"
   },

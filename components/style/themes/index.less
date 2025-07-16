@@ -1,0 +1,48 @@
+// 主题变量定义
+
+// 主题色定制
+@primary-color: #1890ff; // 主色调，可根据需求修改
+@primary-color-hover: #40a9ff; // 主色调悬停色
+@primary-color-active: #096dd9; // 主色调激活色
+@primary-color-outline: fade(@primary-color, 20%); // 主色调轮廓色
+
+// 功能色
+@success-color: #52c41a; // 成功色
+@warning-color: #faad14; // 警告色
+@error-color: #f5222d; // 错误色
+@info-color: #1890ff; // 信息色
+
+// 中性色
+@text-color: rgba(0, 0, 0, 0.85); // 主要文本色
+@text-color-secondary: rgba(0, 0, 0, 0.45); // 次要文本色
+@disabled-color: rgba(0, 0, 0, 0.25); // 禁用色
+@border-color: #d9d9d9; // 边框色
+@background-color: #f5f5f5; // 背景色
+
+// 菜单组件配色定制
+@menu-bg-light: #ffffff; // 亮色主题背景色
+@menu-bg-dark: #001529; // 暗色主题背景色
+@menu-item-selected-color: @primary-color; // 选中项文字颜色
+@menu-item-selected-bg: fade(@primary-color, 10%); // 选中项背景色
+@menu-item-selected-bg-hover: fade(@primary-color, 20%); // 选中项悬停背景色
+@menu-item-hover-color: @primary-color; // 悬停项文字颜色
+@menu-item-hover-bg: fade(@primary-color, 5%); // 悬停项背景色
+
+// 结果组件插图定制
+@result-success-color: @success-color;
+@result-info-color: @info-color;
+@result-warning-color: @warning-color;
+@result-error-color: @error-color;
+
+// 结果组件图片路径定制
+@result-success-image: '~@/assets/images/result-success.svg';
+@result-info-image: '~@/assets/images/result-info.svg';
+@result-warning-image: '~@/assets/images/result-warning.svg';
+@result-error-image: '~@/assets/images/result-error.svg';
+@result-404-image: '~@/assets/images/result-404.svg';
+@result-403-image: '~@/assets/images/result-403.svg';
+@result-500-image: '~@/assets/images/result-500.svg';
+
+// 空状态组件背景图定制
+@empty-image-default: '~@/assets/images/empty-default.svg';
+@empty-image-simple: '~@/assets/images/empty-simple.svg';

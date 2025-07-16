@@ -1,0 +1,27 @@
+// 导入变量定义
+@import '../../style/themes/index.less';
+
+// 定制Empty组件样式
+.ant-empty {
+  // 定制默认图片
+  &-image {
+    height: 152px;
+
+    // 默认图片
+    &-default {
+      background-image: url('@{empty-image-default}');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    // 简单图片
+    &-simple {
+      height: 60px;
+      background-image: url('@{empty-image-simple}');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

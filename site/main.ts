@@ -1,9 +1,11 @@
-// import Antd from 'ant-design-vue'; // 全局引入注册 AntD
 import { createApp } from 'vue';
 
-// import 'ant-design-vue/dist/reset.css';
+import '../components/style'; // 引入定制样式
+
+import DesignVue from '../components'; // 引入定制组件库
+
 import App from './App.vue';
 
 const app = createApp(App);
-// app.use(Antd);
+app.use(DesignVue); // 注册定制组件
 app.mount('#app');

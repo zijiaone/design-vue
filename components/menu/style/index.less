@@ -1,0 +1,45 @@
+// 导入变量定义
+@import '../../style/themes/index.less';
+
+// 定制Menu组件样式
+.ant-menu {
+  // 菜单背景色定制
+  &-light {
+    background-color: @menu-bg-light;
+  }
+
+  &-dark {
+    background-color: @menu-bg-dark;
+  }
+
+  // 菜单项样式定制
+  &-item {
+    &-selected {
+      color: @menu-item-selected-color;
+      background-color: @menu-item-selected-bg;
+
+      &:hover {
+        background-color: @menu-item-selected-bg-hover;
+      }
+    }
+
+    &:hover {
+      color: @menu-item-hover-color;
+      background-color: @menu-item-hover-bg;
+    }
+  }
+
+  // 子菜单样式定制
+  &-submenu {
+    &-title {
+      &:hover {
+        color: @menu-item-hover-color;
+        background-color: @menu-item-hover-bg;
+      }
+    }
+
+    &-selected {
+      color: @menu-item-selected-color;
+    }
+  }
+}

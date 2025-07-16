@@ -1,0 +1,22 @@
+<svg width="252" height="294" viewBox="0 0 252 294" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M250 293H2C1.44772 293 1 292.552 1 292V2C1 1.44772 1.44772 1 2 1H250C250.552 1 251 1.44772 251 2V292C251 292.552 250.552 293 250 293Z" stroke="#D9D9D9" stroke-width="2"/>
+  <path d="M8 41H244V8H8V41Z" fill="#FAFAFA"/>
+  <path d="M150 20.5C150 22.9853 147.985 25 145.5 25C143.015 25 141 22.9853 141 20.5C141 18.0147 143.015 16 145.5 16C147.985 16 150 18.0147 150 20.5Z" fill="#F5222D"/>
+  <path d="M168 20.5C168 22.9853 165.985 25 163.5 25C161.015 25 159 22.9853 159 20.5C159 18.0147 161.015 16 163.5 16C165.985 16 168 18.0147 168 20.5Z" fill="#FAAD14"/>
+  <path d="M186 20.5C186 22.9853 183.985 25 181.5 25C179.015 25 177 22.9853 177 20.5C177 18.0147 179.015 16 181.5 16C183.985 16 186 18.0147 186 20.5Z" fill="#52C41A"/>
+  <path d="M59 89L93 89" stroke="#1890FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 105L143 105" stroke="#1890FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 121L123 121" stroke="#1890FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 137L123 137" stroke="#1890FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 153L93 153" stroke="#1890FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 169L93 169" stroke="#1890FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 189L143 189" stroke="#F5222D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 205L123 205" stroke="#F5222D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 221L123 221" stroke="#F5222D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 237L93 237" stroke="#F5222D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 253L93 253" stroke="#F5222D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M177 131L215 131L196 159L177 131Z" fill="#1890FF" fill-opacity="0.2" stroke="#1890FF" stroke-width="2"/>
+  <path d="M159 213H233V189H159V213Z" fill="#F5222D" fill-opacity="0.2" stroke="#F5222D" stroke-width="2"/>
+  <path d="M177 253C186.941 253 195 244.941 195 235C195 225.059 186.941 217 177 217C167.059 217 159 225.059 159 235C159 244.941 167.059 253 177 253Z" fill="#FAAD14" fill-opacity="0.2" stroke="#FAAD14" stroke-width="2"/>
+  <path d="M8 41H244" stroke="#D9D9D9" stroke-width="2"/>
+</svg>

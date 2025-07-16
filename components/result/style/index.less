@@ -1,0 +1,67 @@
+// 导入变量定义
+@import '../../style/themes/index.less';
+
+// 定制Result组件样式
+.ant-result {
+  // 定制成功图标
+  &-success &-icon > .anticon {
+    color: @result-success-color;
+  }
+
+  // 定制信息图标
+  &-info &-icon > .anticon {
+    color: @result-info-color;
+  }
+
+  // 定制警告图标
+  &-warning &-icon > .anticon {
+    color: @result-warning-color;
+  }
+
+  // 定制错误图标
+  &-error &-icon > .anticon {
+    color: @result-error-color;
+  }
+
+  // 自定义图片路径
+  &-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // 成功状态图片
+    .ant-result-success & {
+      background-image: url('@{result-success-image}');
+    }
+
+    // 信息状态图片
+    .ant-result-info & {
+      background-image: url('@{result-info-image}');
+    }
+
+    // 警告状态图片
+    .ant-result-warning & {
+      background-image: url('@{result-warning-image}');
+    }
+
+    // 错误状态图片
+    .ant-result-error & {
+      background-image: url('@{result-error-image}');
+    }
+
+    // 404状态图片
+    .ant-result-404 & {
+      background-image: url('../../../assets/images/result-404.svg');
+    }
+
+    // 403状态图片
+    .ant-result-403 & {
+      background-image: url('@{result-403-image}');
+    }
+
+    // 500状态图片
+    .ant-result-500 & {
+      background-image: url('@{result-500-image}');
+    }
+  }
+}
