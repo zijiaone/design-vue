@@ -1,26 +1,57 @@
 {
   "name": "design-vue",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "description": "A customized component library based on ant-design-vue",
+  "main": "lib/index.cjs",
+  "module": "es/index.js",
+  "unpkg": "dist/design-vue.umd.js",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.cjs"
+    },
+    "./es": "./es/index.js",
+    "./lib": "./lib/index.cjs",
+    "./dist": "./dist/design-vue.umd.js",
+    "./es/*": "./es/*",
+    "./lib/*": "./lib/*",
+    "./dist/*": "./dist/*",
+    "./components/*": "./components/*"
+  },
+  "files": [
+    "dist",
+    "es",
+    "lib",
+    "components"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "build-only": "vite build",
+    "build": "npm run build:lib",
+    "build:lib": "npm run clean && npm run build:es && npm run build:umd && npm run build:types",
+    "build:es": "cross-env BUILD_MODE=lib vite build",
+    "build:umd": "cross-env BUILD_MODE=umd vite build",
+    "build:types": "vue-tsc --project tsconfig.json --declaration --emitDeclarationOnly --outDir es --skipLibCheck --skipDefaultLibCheck && npm run copy:types",
+    "copy:types": "node scripts/copy-types.js",
+    "clean": "rm -rf es lib dist",
     "type-check": "vue-tsc --build",
     "preview": "vite preview",
     "prepare": "npx simple-git-hooks",
     "lint": "run-s lint:*",
     "lint:lint-staged": "lint-staged",
     "lint:script": "eslint . --fix",
-    "lint:style": "stylelint site/**/*.{html,css,vue,less} --fix",
-    "format": "prettier --write site/"
+    "lint:style": "stylelint components/**/*.{vue,less} --fix",
+    "format": "prettier --write components/"
   },
   "peerDependencies": {
+    "ant-design-vue": "^4.0.0",
     "vue": ">=3.2.0"
   },
   "dependencies": {
-    "ant-design-vue": "^4.2.6"
+    "ant-design-vue": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.8.1",
@@ -30,6 +61,7 @@
     "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/tsconfig": "^0.7.0",
     "commitlint": "^19.8.1",
+    "cross-env": "^7.0.3",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",

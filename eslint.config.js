@@ -61,7 +61,7 @@ export default defineConfigWithVueTs(
   },
   // Vue 文件特定规则配置：针对 .vue 文件的专门规则
   {
-    files: ['**/*.vue'],
+    files: ['**/*.vue', '**/*.ts'],
     rules: {
       'vue/multi-word-component-names': 'off', // 关闭组件名必须多单词的限制
       'vue/html-closing-bracket-newline': [
@@ -139,6 +139,6 @@ export default defineConfigWithVueTs(
   },
   // 忽略配置：指定不需要进行 ESLint 检查的文件
   {
-    ignores: ['node_modules/*', 'dist/*', 'public/*', '*.d.ts'], // 忽略第三方包、构建产物、公共资源和类型声明文件
+    ignores: ['node_modules/*', 'dist/*', 'es/*', 'lib/*', 'public/*', '*.d.ts'], // 忽略第三方包、构建产物、公共资源和类型声明文件
   },
 );

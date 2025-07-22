@@ -10,9 +10,24 @@
     "noUnusedLocals": true,
     // 不允许有未使用的函数参数，启用后会检查函数中未使用的参数。
     "noUnusedParameters": true,
-    // 禁止 switch 语句中 case 没有 break 导致的“穿透”行为，提升代码安全性。
-    "noFallthroughCasesInSwitch": true
+    // 禁止 switch 语句中 case 没有 break 导致的"穿透"行为，提升代码安全性。
+    "noFallthroughCasesInSwitch": true,
+    // 以下是从tsconfig.lib.json合并的配置
+    // 启用项目引用支持
+    "composite": true,
+    // 指定库文件
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    // 指定类型定义
+    "types": ["node"],
+    // 跳过库检查以提高构建速度
+    "skipLibCheck": true,
+    // 生成声明文件
+    "declaration": true,
+    // 只输出声明文件，不输出JS文件
+    "emitDeclarationOnly": true,
+    // 输出目录
+    "outDir": "dist"
   },
-  "include": ["env.d.ts", "site/**/*", "site/**/*.vue", "vite.config.*", "eslint.config.*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["env.d.ts", "components/**/*", "components/**/*.vue"],
+  "exclude": ["node_modules", "dist", "site"]
 }
