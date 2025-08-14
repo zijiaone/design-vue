@@ -47,11 +47,10 @@
     "format": "prettier --write components/"
   },
   "peerDependencies": {
-    "ant-design-vue": "^4.0.0",
     "vue": ">=3.2.0"
   },
   "dependencies": {
-    "ant-design-vue": "^4.0.0"
+    "ant-design-vue": "^4.2.6"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.8.1",
