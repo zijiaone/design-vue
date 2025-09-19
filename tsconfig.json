@@ -26,7 +26,11 @@
     // 只输出声明文件，不输出JS文件
     "emitDeclarationOnly": true,
     // 输出目录
-    "outDir": "dist"
+    "outDir": "dist",
+    // 路径映射
+    "paths": {
+      "@": ["./"]
+    }
   },
   "include": ["env.d.ts", "components/**/*", "components/**/*.vue"],
   "exclude": ["node_modules", "dist", "site"]

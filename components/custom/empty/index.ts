@@ -11,7 +11,7 @@ import ConfigProvider from '../config-provider';
 function getDefaultEmptyImage(): string {
   try {
     // 使用相对路径引用assets目录下的自定义空状态图片
-    return new URL('../assets/empty.svg', import.meta.url).href;
+    return new URL('../../assets/empty.svg', import.meta.url).href;
   } catch (error) {
     console.warn('[Empty] 无法加载自定义空状态图片，将使用默认图片:', error);
     // 如果加载失败，返回undefined让ant-design-vue使用默认图片

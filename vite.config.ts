@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
@@ -20,6 +21,11 @@ const isLibBuild = buildMode === 'lib';
 
 export default defineConfig({
   plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./', import.meta.url)),
+    },
+  },
   css: {
     preprocessorOptions: {
       less: {

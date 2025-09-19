@@ -5,7 +5,7 @@ export { theme } from 'ant-design-vue';
 export const defaultTheme: ThemeConfig = {
   token: {
     // 自定义主题色
-    colorPrimary: '#e75213',
+    // colorPrimary: '#e75213',
     // 可以添加其他自定义tokencolorPrimary
   },
 };

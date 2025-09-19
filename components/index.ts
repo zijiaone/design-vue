@@ -1,8 +1,8 @@
 import type { App } from 'vue';
 
 import * as AntdComponentsRaw from './components'; // 未定制的原始组件
-import ConfigProvider from './config-provider';
-import Empty from './empty';
+import ConfigProvider from './custom/config-provider';
+import Empty from './custom/empty';
 
 /**
  * 导出所有应用了默认主题的 Ant Design Vue 组件
@@ -14,8 +14,8 @@ export * from './components';
  * 导出定制化组件
  * 这些组件在原有功能基础上进行了增强或定制
  */
-export { default as ConfigProvider } from './config-provider';
-export { default as Empty } from './empty';
+export { default as ConfigProvider } from './custom/config-provider';
+export { default as Empty } from './custom/empty';
 
 /**
  * 导出主题相关配置

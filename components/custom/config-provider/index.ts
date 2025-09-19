@@ -3,7 +3,7 @@ import { ConfigProvider as AntConfigProvider } from 'ant-design-vue';
 import type { ThemeConfig } from 'ant-design-vue/es/config-provider/context';
 import { defineComponent, h } from 'vue';
 
-import { defaultTheme } from '../theme';
+import { defaultTheme } from '../../theme';
 
 /**
  * 合并主题配置的工具函数
